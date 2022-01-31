@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type='text/javascript'>
+	window.onload=function(){<!--   ww  w. java 2 s. c om-->
+    var h1 = document.getElementsByClassName("my-title");
+    h1[0].style.color = 'MidnightBlue';
+}
+</script>
+
+
+</head>
+
+
+
+<body style="background-color:#B0E0E6;">
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+
+
+
+<h1 style = "text-align:center;" class="my-title">Ayo Hannah Aremu</h1>
+<p style = "text-align:center;">
+	<strong>
+		<span style="color:#00008B">+2348038710144 | aremuayohannah@gmail.com | Lagos, Nigeria</span>
+	</strong>
+</p>
+<p style = "text-align:center;" id="linkedin-url" style="font-size: 14px; font-weight: bold;">
+	<button target="_blank" onclick="window.location.href='https://www.linkedin.com/in/aremu-imole-ayo-a42110125/'">click here </button>
+	<span style="color:	#0000CD"><em><a href="https://www.linkedin.com/in/aremu-imole-ayo-a42110125/" target="_blank">or here for Linkedin profile</a></em></span>
+
+<p style = "text-align:center;" id="gitrepo" style="font-size: 14px; font-weight: bold;">
+	<button target="_blank" onclick="window.location.href='https://github.com/aremuayohannah'">click here </button>
+	<span style="color:	#0000CD"><em><a href="https://github.com/aremuayohannah" target="_blank">or here for git repo</a></em></span>
+</p>
+
+<h2 style="font-size:100%;"> CERTIFICATIONS</h2>
+<hr>
+<ul>
+	<li>Scaled Agile Inc | Certified Safe® 5 Practitioner | 2021</li>
+	<li>ISTQB® Certified Tester Foundation Level | 2020</li>
+	<li>Scaled Agile Inc | Certified Safe® 4 Practitioner | 2019</li>
+	<li>GoLeanSixSigma | Yellow belt | 2018</li>
+</ul>
+
+<h2 style="font-size:100%;">SKILLS, TOOLS & TECHNOLOGIES</h2>
+<hr>
+
+<table>
+	<style> table, th, td { border: 1px solid black; } th, td {
+  background-color: #96D4D4;}</style>
+	<tr id="skills_heading">
+		<th>Skills</th>
+		<th>Tools</th>
+		<th>programming Language</th>
+		<th>Git repo</th>
+	</tr>
+	<tr id="skills1">
+		<td>Testing and automating User Interface</td>
+		<td>cypress.io, selenium webdriver, windows, mac, mobile-web, visual studio, intellij</td>
+		<td>Javascript</td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+
+	</tr>
+	<tr id="skills2">
+		<td>Testing and automating mobile apps</td>
+		<td>appium, selenium, Android, Ios, Visual studio, Intellij</td>
+		<td>Javascript</td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+
+	</tr>
+	<tr id="skills3">
+		<td>writing and good understanding of html and css</td>
+		<td>sublime text, Visual studio</td>
+		<td>html, css</td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+
+	</tr>
+	<tr id="skills4">
+		<td>Testing and automating rest and soap API</td>
+		<td>Postman</td>
+		<td>Java script</td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+	</tr>
+	<tr id="skills5">
+		<td>Load Testing </td>
+		<td>Apache Jmeter</td>
+		<td></td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+	</tr>
+	<tr id="skills6">
+		<td>Accesibility testing</td>
+		<td>Wave</td>
+		<td>interpret result in Html</td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+	</tr>
+	<tr id="skills7">
+		<td>Testing data stores</td>
+		<td>MongoDB, MS SQL, Redis</td>
+		<td>Querying data stores</td>
+		<td style="color:#1E90FF"><em>coming soon</em></td>
+	</tr>
+	<tr id="skills8">
+		<td>Experienced with CI/CD tools</td>
+		<td>Git, Jenkins, Jira, Confluence, </td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr id="skills9">
+		<td>Experienced with testing based on the Agile principles</td>
+		<td>Jira, Confluence, </td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+
+<h3 style="font-size:100%;" style="caption-side:bottom">RATE MY SKILLS</h3>
+<hr>
+
+<form method="post">
+    <input type="button" value="Send Linkedin message" target="_blank" onclick="window.location.href='https://www.linkedin.com/in/aremu-imole-ayo-a42110125/'" />
+  </form>
+
+  <p>count down to my skill update</p>
+
+<p style="color:#0000CD" id="skillReview"></p>  
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 28, 2022 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("skillReview").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("skillReview").innerHTML = "EXPIRED";
+  }
+
+
+}, 1000);
+</script>
+
+<h3 style="font-size:100%;" style="caption-side:bottom">MINI PROJECT</h3>
+<hr>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
