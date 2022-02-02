@@ -3,18 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<script type='text/javascript'>
-	window.onload=function(){<!--   ww  w. java 2 s. c om-->
+	window.onload=function(){
     var h1 = document.getElementsByClassName("my-title");
     h1[0].style.color = 'MidnightBlue';
 }
 </script>
+<link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 
 
-<body style="background-color:#B0E0E6;">
+<body style="background-color:#f5f7f1;">
 	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
 
@@ -27,11 +28,11 @@
 	</strong>
 </p>
 <p style = "text-align:center;" id="linkedin-url" style="font-size: 14px; font-weight: bold;">
-	<button target="_blank" onclick="window.location.href='https://www.linkedin.com/in/aremu-imole-ayo-a42110125/'">click here </button>
+	<button style ="height: 20px; font-size: 14px;" id="mylinkdin" target="_self" onclick="window.location.href='https://www.linkedin.com/in/aremu-imole-ayo-a42110125/'">click here </button>
 	<span style="color:	#0000CD"><em><a href="https://www.linkedin.com/in/aremu-imole-ayo-a42110125/" target="_blank">or here for Linkedin profile</a></em></span>
 
 <p style = "text-align:center;" id="gitrepo" style="font-size: 14px; font-weight: bold;">
-	<button target="_blank" onclick="window.location.href='https://github.com/aremuayohannah'">click here </button>
+	<button style ="height: 20px; font-size: 14px;" id="github" target="_self" onclick="window.location.href='https://github.com/aremuayohannah'">click here </button>
 	<span style="color:	#0000CD"><em><a href="https://github.com/aremuayohannah" target="_blank">or here for git repo</a></em></span>
 </p>
 
@@ -159,16 +160,47 @@ var x = setInterval(function() {
 }, 1000);
 </script>
 
+
+
 <h3 style="font-size:100%;" style="caption-side:bottom">MINI PROJECT</h3>
 <hr>
 
+<section>
+<div class="calculator">
+	<input type="text" class="board" id="display" value="" disabled/>
+
+	<div class="calculator-keys">
+		<button class="operator digits" type="button" data-action="add" value="+">+</button>
+		<button class="operator digits" type="button" data-action="subtract" value="-">-</button>
+		<button class="operator digits" type="button" data-action="multiply" value="*">*</button>
+		<button class="operator digits" type="button" data-action="divide" value="/">/</button>
+
+		<button class="digits" type="button" value="9">9</button>
+		<button class="digits" type="button" value="8">8</button>
+		<button class="digits" type="button" value="7">7</button>
+		<button class="digits" type="button" value="6">6</button>
+
+		<button class="digits" type="button" value="5">5</button>
+		<button class="digits" type="button" value="4">4</button>
+		<button class="digits" type="button" value="3">3</button>
+		<button class="digits" type="button" value="2">2</button>
+
+		<button class="digits" type="button" value="1">1</button>
+		<button class="digits" type="button" value="0">0</button>
+		<button class="digits decimal" type="button" data-action="decimal" value=".">.</button>
+		<button class="digits all-clear" type="button" data-action="clear" value="AC">AC</button>
+
+		<button class="digits equal-sign" type="button" data-action="calculate" value="=">=</button>
+
+		</div>
+		</div>
+		</section>
+	
+</div>
+</section>
+<script src="js/index.js"></script>
+
 </body>
-
-
-
-
-
-
 
 
 </html>
